@@ -17,7 +17,7 @@ public class Support implements rescuedTeam,protectedTeam,Wings{
         return dfn*((1+4.3*level)/100);
     }
     public double healRate() {
-        return hp*=1.5;
+        return hp*=1.25;
     }
     public double percentOfDefendUp(){
         return 1.25;

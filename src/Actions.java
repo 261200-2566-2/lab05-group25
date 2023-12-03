@@ -59,8 +59,6 @@ public class Actions {
             p.hp = (p.hp*(100-diff))/100;
             t.level++;
         }
-        t.showStatus();
-        p.showStatus();
     }
     static void defendAndAttack(Tank t,Mage m){
         double a = t.percentOfTakeDamage();
@@ -156,8 +154,6 @@ public class Actions {
             p.hp-=50;
             t.level++;
         }
-        t.showStatus();
-        p.showStatus();
     }
     static void attackAndProtect(Mage m,Support p){
         double a = m.percentOfMakeDamage();
