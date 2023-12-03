@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Press number for your actions : [1]Attack [2]Shoes [3]Wings");
         System.out.print("Tank: ");
         actions[0] = s.nextLine();
-        System.out.println("Press number for your actions : [1]Defend [2]Protect [3]Wings");
+        System.out.println("Press number for your actions : [1]Defend [2]Protect [3]Wings [4]Heal");
         System.out.print("Sup: ");
         actions[1] = s.nextLine();
     }
@@ -23,12 +23,16 @@ public class Main {
             t.wearingWings();
         }else if(b.equalsIgnoreCase("3")){
             p.wearingWings();
+        }else if(b.equalsIgnoreCase("4")){
+            p.healRate();
         }
+        t.showStatus();
+        p.showStatus();
     }
     static boolean victory = true;
 
     public static void main(String[] args) {
-        System.out.println("สาธิต 2 ตัวละครคือ Tank กับ Support");
+        System.out.println("สาธิต 2 ตัวละครคือ Tank กับ Support และเมื่อคนใดคนหนึ่งกดเลือก accessories หรือทำการ heal ในตานั้นจะถือว่าการโจมตีถือเป็นโมฆะ");
         Scanner s = new Scanner(System.in);
         Tank t = new Tank();
         Support p = new Support();
