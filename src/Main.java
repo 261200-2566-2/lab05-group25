@@ -17,11 +17,13 @@ public class Main {
             Actions.attackAndDefend(t,p);
         }else if(a.equalsIgnoreCase("1") && b.equalsIgnoreCase("2")){
             Actions.attackAndProtect(t,p);
-        }else if(a.equalsIgnoreCase("2")){
+        }
+        if(a.equalsIgnoreCase("2")){
             t.wearingShoes();
         }else if(a.equalsIgnoreCase("3")){
             t.wearingWings();
-        }else if(b.equalsIgnoreCase("3")){
+        }
+        if(b.equalsIgnoreCase("3")){
             p.wearingWings();
         }else if(b.equalsIgnoreCase("4")){
             p.healRate();

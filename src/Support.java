@@ -20,7 +20,7 @@ public class Support implements rescuedTeam,protectedTeam,Wings{
         return hp*=1.25;
     }
     public double percentOfDefendUp(){
-        return 1.25;
+        return 1.2;
     }
     public double wearingWings(){
         return dfn*=percentOfDefendUp();
